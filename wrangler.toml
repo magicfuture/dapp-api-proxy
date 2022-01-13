@@ -1,0 +1,10 @@
+name = "dapp-api-proxy"
+type = "javascript"
+environment = "production"
+workers_dev = true
+route = ""
+zone_id = ""
+compatibility_date = "2022-01-13"
+
+[env.production]
+account_id = "03633e3db3aa3b83b528047fcc420957"

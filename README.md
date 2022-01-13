@@ -1,0 +1,1 @@
+Simple API fetching , auto deploy to cloudflare by GitHub Action
