@@ -20,7 +20,9 @@ jobs:
             MARKETSTACK_API_TOKEN
             MORALIS_APPID
             MORALIS_SERVERURL
+            MORALIS_APPKEY
         env: 
           MARKETSTACK_API_TOKEN: ${{ secrets.MARKETSTACK_API_TOKEN }}
           MORALIS_APPID: ${{ secrets.MORALIS_APPID }}
           MORALIS_SERVERURL: ${{ secrets.MORALIS_SERVERURL }}
+          MORALIS_APPKEY: ${{ secrets.MORALIS_APPKEY }}
