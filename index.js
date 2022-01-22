@@ -7,6 +7,11 @@ async function gatherResponse(response) {
 }
 
 async function handleRequest(request) {
+ let data = await request.json();
+ console.log(data);
+ let walletAddress = data.walletAddress;
+ let walletEncryptionKey = data.walletEncryptionKey;
+ let functionName = data.functionName;
  const init = {
   method: 'POST',
   headers: {
@@ -22,11 +27,6 @@ async function handleRequest(request) {
  let url = new URL(request.url);
  const { search } = url;
 
- let data = await request.json()
- let walletAddress = data.walletAddress;
- let walletEncryptionKey = data.walletEncryptionKey;
- let functionName = data.functionName;
- 
  let apiUrl = "https://dapp-locker-api.netlify.app/.netlify/functions/"+functionName;
 
  const response = await fetch(apiUrl, init)
